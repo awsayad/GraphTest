@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Title of the App!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script> src="main.js"</script>
+    <script type="text/javascript" src="graphHelper.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    
+</head>
+<body>
+
+    <script src="https://unpkg.com/@microsoft/mgt@2/dist/bundle/mgt-loader.js"></script>
+    <mgt-msal-provider client-id="d15b645c-1141-4452-b748-2940139a559b"></mgt-msal-provider>
+    <mgt-login></mgt-login>
+    <mgt-agenda></mgt-agenda>
+    <mgt-people show-max="5"></mgt-people>
+    <mgt-people-picker></mgt-people-picker>
+    
+    <br>
+    <br>
+
+        <button onclick="listUsersAsync()"> click me !</button> 
+   <p> 
+      <div id = "result"> </div> 
+   </p> 
+
+</body>
+
+</html>
